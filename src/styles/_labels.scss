@@ -1,0 +1,26 @@
+.cc-slider_label {
+	width: 100%;
+	background-color: $label-bg;
+	color: $white;
+	font-size: 20px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.cc-slider_position {
+	background-color: $label-bg;
+	color: $white;
+  	font-size: 12px;
+  	padding: 2px;
+  	position: absolute;
+  	top: 10px;
+  	left: 10px;
+}
+.cc-slider_right-text {
+	background-color: $label-bg;
+	color: $white;
+  	font-size: 12px;
+  	padding: 2px;
+  	position: absolute;
+  	top: 10px;
+  	right: 10px;
+}

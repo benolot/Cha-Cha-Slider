@@ -2,27 +2,70 @@
 <html>
 <head>
 	<title>Example Cha Cha Slider</title>
+	<link rel="stylesheet" type="text/css" href="dist/styles/app.min.css">
 </head>
 <body>
 	<div class="cc-slider">
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<div class="cc-slider_position">1 / 6</div>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
 		</div>
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<div class="cc-slider_position">2 / 6</div>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
 		</div>
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<div class="cc-slider_position">3 / 6</div>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
 		</div>
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<div class="cc-slider_position">4 / 6</div>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
 		</div>
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<div class="cc-slider_position">5 / 6</div>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
 		</div>
-		<div class="cc-slider_item">
-			<img src="https://picsum.photos/200/300?random" />
+		<div class="cc-slider_item fade">
+			<span class="cc-slider_position">6 / 6</span>
+			<div class="cc-slider_right-text">Copyright Unsplash</div>
+			<img src="https://picsum.photos/900/400?random" />
+			<div class="cc-slider_label">
+				<span>Lorem Ipsum</span>
+			</div>
+		</div>
+		<!-- Controls -->
+		<a class="cc-slider_prev" onclick="slideToTheLeft()">&#10094;</a>
+	  	<a class="cc-slider_next" onclick="slideToTheRight()">&#10095;</a>
+		<div style="text-align:center">
+		  	<span class="cc-slider_dot" onclick="jumpSlide(1)"></span> 
+		  	<span class="cc-slider_dot" onclick="jumpSlide(2)"></span> 
+		  	<span class="cc-slider_dot" onclick="jumpSlide(3)"></span>
+		  	<span class="cc-slider_dot" onclick="jumpSlide(4)"></span> 
+		  	<span class="cc-slider_dot" onclick="jumpSlide(5)"></span> 
+		  	<span class="cc-slider_dot" onclick="jumpSlide(6)"></span> 
 		</div>
 	</div>
+	<script type="text/javascript" src="dist/js/main.js"></script>
 </body>
 </html>
