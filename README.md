@@ -14,6 +14,7 @@ Take it back now y'all
  - [ ] Set the position element via the JS and not manually
  - [ ] Add the controls via the JS and not manually
  - [ ] Remove gap between slide contents and slide label
+ - [ ] Cleanup the code
  - [x] Rename CSS Classes to be Cha Cha Slider specific
  - [x] Add slideBack() function
  - [x] Add slideForward() function
