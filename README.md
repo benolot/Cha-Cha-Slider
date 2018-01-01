@@ -3,7 +3,7 @@ Take it back now y'all
 
 
 # Setup
-`npm install`
+`npm install`, run `gulp`, and then include the `dist/js/main.min.js` script and the `dist/styles/app.min.css` default theme.
 
 
 # Todo list
@@ -15,6 +15,7 @@ Take it back now y'all
  - [ ] Add the controls via the JS and not manually
  - [ ] Remove gap between slide contents and slide label
  - [ ] Cleanup the code
+ - [ ] Add mobile support for default theme
  - [x] Rename CSS Classes to be Cha Cha Slider specific
  - [x] Add slideBack() function
  - [x] Add slideForward() function
