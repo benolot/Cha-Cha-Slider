@@ -20,3 +20,7 @@ Take it back now y'all
  - [x] Add slideForward() function
  - [x] Add jumpSlide() function
  - [x] Add custom text field to top right to allow for copyright info, etc
+
+# Version/Changelog
+
+_Currently in version 0.0.1 no changelog can be provided_
