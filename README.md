@@ -16,6 +16,7 @@ Take it back now y'all
  - [ ] Add mobile support for default theme
  - [ ] Turn features (Progress, auto scroll, etc) on and off via customisation
  - [ ] Initial function to run when page is loaded that setups library
+ - [ ] When slider is focused, allow arrow keys for scrolling through slides (left to right)
  - [x] Rename CSS Classes to be Cha Cha Slider specific
  - [x] Add slideBack() function
  - [x] Add slideForward() function
@@ -25,6 +26,9 @@ Take it back now y'all
  - [x] Add the controls via the JS and not manually
 
 # Version/Changelog
+
+**__Version 0.0.3.1__**
+- Fixed animation class being a generic name
 
 **__Version 0.0.3__**
 - Added next and previous controls via the library rather than user
