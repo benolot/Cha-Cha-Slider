@@ -11,7 +11,6 @@ Take it back now y'all
  - [ ] Documentation
  - [ ] Implement API To library
  - [ ] Object Orientated
- - [ ] Add the controls via the JS and not manually
  - [ ] Remove gap between slide contents and slide label
  - [ ] Cleanup the code
  - [ ] Add mobile support for default theme
@@ -22,9 +21,14 @@ Take it back now y'all
  - [x] Add slideForward() function
  - [x] Add jumpSlide() function
  - [x] Add custom text field to top right to allow for copyright info, etc
- - [x] Set the position element via the JS and not manually
+ - [x] Set the current slide element via the JS and not manually
+ - [x] Add the controls via the JS and not manually
 
 # Version/Changelog
+
+**__Version 0.0.3__**
+- Added next and previous controls via the library rather than user
+- Switched the container to an ID rather than a class
 
 **__Version 0.0.2__**
 - Added the slide count & current slide into top left corner

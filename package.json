@@ -1,6 +1,6 @@
 {
   "name": "cha-cha-slider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript slider",
   "main": "dist/main.js",
   "dependencies": {

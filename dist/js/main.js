@@ -1,4 +1,5 @@
 var slideIndex = 1;
+addControls();
 addPositions();
 showSlide(slideIndex);
 // Should really move all of the above into an intilisation function that is called on load
@@ -62,4 +63,8 @@ function addPositions() {
     for (var i = 0; i < slide_count; i++) {
         slides[i].innerHTML += ('<div class="cc-slider_position">' + (i + 1) + '/' + slide_count  + '</div>');
     }
+}
+
+function addControls() {
+    document.getElementById('cc-slider').innerHTML += '<a class="cc-slider_prev" onclick="slideToTheLeft()">&#10094;</a><a class="cc-slider_next" onclick="slideToTheRight()">&#10095;</a>';
 }
