@@ -1,51 +1,55 @@
-var slideIndex = 1;
-addControls();
-addPositions();
-showSlide(slideIndex);
-// Should really move all of the above into an intilisation function that is called on load
+var ccs_slideIndex = 1;
 
-function jumpSlide(n) {
-    showSlide(n);
+window.addEventListener('load', ccs_setupSlider);
+
+function ccs_setupSlider() {
+    ccs_addControls();
+    ccs_addPositions();
+    ccs_showSlide(ccs_slideIndex);
+}
+
+function ccs_jumpSlide(n) {
+    ccs_showSlide(n);
 }
 
 // Named this silly name due to the cha cha slide song
-function slideToTheRight() {
-    var n = slideIndex+= 1; // Using var here for browser support, rather than using let or similar.
+function ccs_slideToTheRight() {
+    var n = ccs_slideIndex+= 1; // Using var here for browser support, rather than using let or similar.
     var slides = document.getElementsByClassName("cc-slider_item");
     if (n > slides.length) {
-        slideIndex = 1;
+        ccs_slideIndex = 1;
     } 
     if (n < 1) {
-        slideIndex = slides.length;
+        ccs_slideIndex = slides.length;
     }
-    showSlide(n)
+    ccs_showSlide(n)
 }
 
 // Named this silly name due to the cha cha slide song
-function slideToTheLeft() {
-    var n = slideIndex-= 1;
+function ccs_slideToTheLeft() {
+    var n = ccs_slideIndex-= 1;
     var slides = document.getElementsByClassName("cc-slider_item");
     if (n > slides.length) {
-        slideIndex = 1;
+        ccs_slideIndex = 1;
     } 
     if (n < 1) {
-        slideIndex = slides.length;
+        ccs_slideIndex = slides.length;
     }
-    showSlide(n);
+    ccs_showSlide(n);
 }
 
-function showSlide(n) {
+function ccs_showSlide(n) {
     var i;
     var slides = document.getElementsByClassName("cc-slider_item");
     var dots = document.getElementsByClassName("cc-slider_dot");
     if (n > slides.length) {
-        slideIndex = 1;
+        ccs_slideIndex = 1;
     } 
     else if (n < 1) {
-        slideIndex = slides.length;
+        ccs_slideIndex = slides.length;
     }
     else {
-        slideIndex = n;
+        ccs_slideIndex = n;
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
@@ -53,11 +57,11 @@ function showSlide(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" cc-slider_active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " cc-slider_active";
+    slides[ccs_slideIndex-1].style.display = "block";
+    dots[ccs_slideIndex-1].className += " cc-slider_active";
 }
 
-function addPositions() {
+function ccs_addPositions() {
     var slides = document.getElementsByClassName("cc-slider_item");
     var slide_count = slides.length;
     for (var i = 0; i < slide_count; i++) {
@@ -65,6 +69,6 @@ function addPositions() {
     }
 }
 
-function addControls() {
-    document.getElementById('cc-slider').innerHTML += '<a class="cc-slider_prev" onclick="slideToTheLeft()">&#10094;</a><a class="cc-slider_next" onclick="slideToTheRight()">&#10095;</a>';
+function ccs_addControls() {
+    document.getElementById('cc-slider').innerHTML += '<a class="cc-slider_prev" onclick="ccs_slideToTheLeft()">&#10094;</a><a class="cc-slider_next" onclick="ccs_slideToTheRight()">&#10095;</a>';
 }

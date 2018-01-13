@@ -15,8 +15,8 @@ Take it back now y'all
  - [ ] Cleanup the code
  - [ ] Add mobile support for default theme
  - [ ] Turn features (Progress, auto scroll, etc) on and off via customisation
- - [ ] Initial function to run when page is loaded that setups library
  - [ ] When slider is focused, allow arrow keys for scrolling through slides (left to right)
+ - [ ] Allow any size image to be used
  - [x] Rename CSS Classes to be Cha Cha Slider specific
  - [x] Add slideBack() function
  - [x] Add slideForward() function
@@ -24,19 +24,23 @@ Take it back now y'all
  - [x] Add custom text field to top right to allow for copyright info, etc
  - [x] Set the current slide element via the JS and not manually
  - [x] Add the controls via the JS and not manually
+ - [x] Initial function to run when page is loaded that setups library
+ - [x] Wait till all images are complete before initalising
 
 # Version/Changelog
 
-**__Version 0.0.3.1__**
+**_Version 0.0.4_**
+- Initalisation function on page ready, waiting till after images loaded
+
+**_Version 0.0.3.1_**
 - Fixed animation class being a generic name
 
-**__Version 0.0.3__**
+**_Version 0.0.3_**
 - Added next and previous controls via the library rather than user
 - Switched the container to an ID rather than a class
 
-**__Version 0.0.2__**
+**_Version 0.0.2_**
 - Added the slide count & current slide into top left corner
 
 **__Version 0.0.1__**
 - Launched
-
