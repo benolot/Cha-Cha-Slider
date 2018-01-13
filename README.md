@@ -1,3 +1,10 @@
+# Authors Note
+This was kind of a rough idea I had over a couple of nights, and was never refined into a production ready library. The repository has been left here, without documentation or promise of further updates. I may revist this one day, but for now consider this an abandoned project. I never got around to setting up branches, but ideally I would have had a develop branch, with feature branches merging into this before moving onto production, and then being released. If anyone would like to inherit this project and finish it off, let me know, or submit a PR.
+
+*If you really want to use this, see the example.*
+
+---
+
 # Cha-Cha-Slider
 Take it back now y'all
 
@@ -9,7 +16,7 @@ Take it back now y'all
 # Todo list
  - [ ] Create Contributor Guide
  - [ ] Documentation
- - [ ] Implement API To library
+ - [ ] Implement API To library for programatic controlling
  - [ ] Object Orientated
  - [ ] Remove gap between slide contents and slide label
  - [ ] Cleanup the code
